@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>隐私政策 · 伴生记</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+            background: #f6f6f6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 30px 16px 60px;
+        }
+
+        .container {
+            max-width: 820px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 32px 32px 48px;
+            transition: all 0.2s;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 16px 32px;
+                border-radius: 20px;
+            }
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        .header-icon {
+            width: 48px;
+            height: 48px;
+            background: #1A2A3A;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: -0.3px;
+        }
+
+        .header .sub {
+            font-size: 14px;
+            color: #888;
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        .panel h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 28px 0 10px;
+        }
+
+        .panel h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .panel h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 22px 0 8px;
+        }
+
+        .panel p,
+        .panel li {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .panel p {
+            margin-bottom: 12px;
+        }
+
+        .panel ul,
+        .panel ol {
+            padding-left: 22px;
+            margin-bottom: 16px;
+        }
+
+        .panel li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background: #f5f7fa;
+            border-left: 4px solid #1A2A3A;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #222;
+        }
+
+        .highlight-box strong {
+            color: #1A2A3A;
+        }
+
+        .divider-light {
+            height: 1px;
+            background: #ececec;
+            margin: 30px 0 20px;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 32px;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 22px;
+        }
+
+        .footer-note a {
+            color: #555;
+            text-decoration: none;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .footer-note a:hover {
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            .panel h2 {
+                font-size: 18px;
+            }
+            .panel p,
+            .panel li {
+                font-size: 14px;
+            }
+            .highlight-box {
+                padding: 14px 16px;
+            }
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 10px;
+            }
+            .container {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== 头部 ===== -->
+        <div class="header">
+            <div class="header-icon">伴</div>
+            <div>
+                <h1>伴生记</h1>
+                <div class="sub">隐私政策</div>
+            </div>
+        </div>
+
+        <!-- ===== 内容 ===== -->
+        <div class="panel">
+
+            <p style="color:#888; font-size:14px; margin-bottom:18px;">更新日期：2025年8月 &nbsp;·&nbsp; 生效日期：2025年8月</p>
+
+            <div class="highlight-box">
+                <strong>🔒 我们的承诺</strong><br />
+                伴生记是一款 <strong>纯本地应用（Local-First）</strong>。你的所有数据——书籍、笔记、灵感、知识卡片——<strong>默认只存储在设备本地</strong>，我们 <strong>不主动收集、不上传、不共享</strong> 您的个人信息。
+            </div>
+
+            <h2>1. 信息收集说明</h2>
+            <p>伴生记 <strong>不需要注册账号</strong>，也不要求您提供任何个人信息（如手机号、邮箱、姓名等）。App 仅在您主动操作时读写以下数据：</p>
+            <ul>
+                <li><strong>电子书文件</strong>：您通过「导入书籍」功能选择的 TXT / EPUB 文件，用于提供阅读功能。</li>
+                <li><strong>阅读记录</strong>：包括阅读进度、书签、划线笔记，用于恢复您的阅读状态。</li>
+                <li><strong>灵感与知识卡片</strong>：您主动记录和创作的文字内容。</li>
+                <li><strong>标签</strong>：您为灵感或知识卡片添加的分类标签。</li>
+            </ul>
+            <p>以上所有数据均 <strong>仅保存在您的设备本地</strong>，伴生记 <strong>不会以任何形式上传至任何服务器</strong>。</p>
+
+            <h2>2. 权限使用说明</h2>
+            <p>伴生记可能申请以下系统权限，仅用于实现对应功能：</p>
+            <ul>
+                <li><strong>存储权限（Android）/ 文件访问权限（iOS）</strong>：用于导入电子书文件、导出备份文件、保存分享图片。所有文件仅由您主动选择操作，App 不会自动扫描或上传任何文件。</li>
+                <li><strong>网络权限</strong>：仅用于崩溃上报（如您开启）、统计分析（如腾讯Bugly SDK）。</li>
+                <li><strong>相册权限</strong>：仅在您主动选择图片作为书籍封面或分享卡片时使用。</li>
+            </ul>
+            <p>您可以在系统设置中随时关闭这些权限，不影响 App 的核心阅读功能。</p>
+
+            <h2>3. 第三方 SDK</h2>
+            <p>为改善产品体验，伴生记可能会集成以下第三方 SDK：</p>
+            <ul>
+                <li><strong>腾讯Bugly</strong>：用于统计日活、启动次数等基础数据。 SDK 会收集 <strong>设备标识符（OAID/IDFA）</strong> 和 <strong>粗略位置信息（IP 归属地）</strong>，但 <strong>不会关联到任何个人身份信息</strong>。您可以在系统设置中限制广告追踪。</li>
+                <li><strong>Flutter 基础库</strong>：包括 Flutter 引擎、Drift 数据库等，仅用于本地功能实现，不收集任何数据。</li>
+            </ul>
+            <p>未来如果接入 AI 大模型（如知识图谱构建、智能摘要），我们会<strong>提前在 App 内弹窗告知并获得您的明确授权</strong>，并更新本隐私政策。</p>
+
+            <h2>4. 数据存储与安全</h2>
+            <ul>
+                <li><strong>存储位置</strong>：所有数据存储在 <strong>设备本地</strong> 的 SQLite 数据库和文件系统中，不上传任何服务器。</li>
+                <li><strong>数据导出</strong>：您可以通过「设置 → 备份与恢复」功能，将全部数据导出为加密压缩包，自行保管。</li>
+                <li><strong>数据删除</strong>：卸载 App 即可删除所有本地数据。您也可以手动在设置中清空数据。</li>
+                <li><strong>加密措施</strong>：备份文件支持 <strong>AES-256 加密</strong>，密码由您设定，我们无法解密。</li>
+            </ul>
+
+            <h2>5. 您的权利</h2>
+            <p>您对个人数据拥有完全的控制权：</p>
+            <ul>
+                <li><strong>查看</strong>：随时在 App 内查看所有记录。</li>
+                <li><strong>修改</strong>：编辑或删除任何书籍、灵感、知识卡片。</li>
+                <li><strong>导出</strong>：通过「备份」功能导出全部数据。</li>
+                <li><strong>删除</strong>：卸载 App 或手动删除数据。</li>
+                <li><strong>撤回同意</strong>：关闭权限或卸载 App 即视为撤回同意。</li>
+            </ul>
+
+            <h2>6. 未成年人保护</h2>
+            <p>伴生记不面向 14 周岁以下未成年人提供服务。如您是未成年人，请在监护人指导下使用。</p>
+
+            <h2>7. 隐私政策更新</h2>
+            <p>我们可能会不时更新本隐私政策。重大变更（如新增数据收集类型）会在 App 内以弹窗形式告知您并获得同意。您可以在「设置 → 隐私政策」中随时查看最新版本。</p>
+
+            <h2>8. 联系我们</h2>
+            <p>如您对隐私政策有任何疑问，请联系我们：</p>
+            <ul>
+                <li>📧 邮箱：<strong>1244914544@qq.com</strong></li>
+            </ul>
+            <p style="margin-top:6px; color:#888;">我们会在 <strong>3 个工作日内</strong> 回复您的邮件。</p>
+
+            <div class="divider-light"></div>
+            <p style="font-size:13px; color:#aaa; text-align:center;">
+                伴生记 · 记录读过的书，走过的路
+            </p>
+
+        </div>
+
+        <!-- ===== 底部 ===== -->
+        <div class="footer-note">
+            <p>
+                <a href="#" onclick="window.print();return false;">🖨️ 打印 / 导出 PDF</a>
+               
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

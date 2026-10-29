@@ -197,7 +197,14 @@
         <!-- ===== 内容 ===== -->
         <div class="panel">
 
-            <p style="color:#888; font-size:14px; margin-bottom:18px;">更新日期：2025年8月 &nbsp;·&nbsp; 生效日期：2025年8月</p>
+            <p style="color:#888; font-size:14px; margin-bottom:18px;">更新日期：2026年10月29日 &nbsp;·&nbsp; 生效日期：2026年10月29日</p>
+
+            <div class="highlight-box" style="background:#F4F1FF; border-left:4px solid #6C5CE7;">
+                <strong>📋 运营方信息</strong><br />
+                <strong>应用名称</strong>：伴生记<br />
+                <strong>应用运营方 / 研发方</strong>：个人开发者 【黄春雷】<br />
+                <strong>联系邮箱</strong>：1244914544@qq.com
+            </div>
 
             <div class="highlight-box">
                 <strong>🔒 我们的承诺</strong><br />
@@ -215,18 +222,28 @@
             <p>以上所有数据均 <strong>仅保存在您的设备本地</strong>，伴生记 <strong>不会以任何形式上传至任何服务器</strong>。</p>
 
             <h2>2. 权限使用说明</h2>
-            <p>伴生记可能申请以下系统权限，仅用于实现对应功能：</p>
-            <ul>
-                <li><strong>存储权限（Android）/ 文件访问权限（iOS）</strong>：用于导入电子书文件、导出备份文件、保存分享图片。所有文件仅由您主动选择操作，App 不会自动扫描或上传任何文件。</li>
-                <li><strong>网络权限</strong>：仅用于崩溃上报（如您开启）、统计分析（如腾讯Bugly SDK）。</li>
-                <li><strong>相册权限</strong>：仅在您主动选择图片作为书籍封面或分享卡片时使用。</li>
-            </ul>
-            <p>您可以在系统设置中随时关闭这些权限，不影响 App 的核心阅读功能。</p>
+            <p>伴生记 <strong>不申请任何敏感权限</strong>。App 仅使用以下两项系统权限，均为安装时自动授予、不会弹出授权框的类型：</p>
+            <table style="width:100%; border-collapse:collapse; font-size:14px; margin:12px 0;">
+                <tr style="background:#f5f3ff;">
+                    <th style="text-align:left; padding:8px; border:1px solid #e8e4f8;">权限名称</th>
+                    <th style="text-align:left; padding:8px; border:1px solid #e8e4f8;">使用目的</th>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border:1px solid #e8e4f8;">网络访问（INTERNET）</td>
+                    <td style="padding:8px; border:1px solid #e8e4f8;">加载隐私政策与用户使用协议网页；在您同意本政策后上传崩溃日志以改进稳定性</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border:1px solid #e8e4f8;">网络状态（ACCESS_NETWORK_STATE）</td>
+                    <td style="padding:8px; border:1px solid #e8e4f8;">判断当前是否有网络连接，无网络时暂存上报数据</td>
+                </tr>
+            </table>
+            <p><strong>关于文件访问</strong>：App 通过系统文件选择器由您主动选取电子书或备份文件，此过程使用系统提供的授权机制，<strong>App 不申请、也不需要存储权限</strong>，无法访问您未主动选择的任何文件。</p>
+            <p><strong>关于保存图片</strong>：分享卡片保存到相册使用系统媒体库接口（Android 11 及以上无需权限）。在 Android 10 及以下系统上，该功能可能无法直接使用，建议改用「分享」功能发送图片。</p>
 
             <h2>3. 第三方 SDK</h2>
             <p>为改善产品体验，伴生记可能会集成以下第三方 SDK：</p>
             <ul>
-                <li><strong>腾讯Bugly</strong>：用于统计日活、启动次数等基础数据。 SDK 会收集 <strong>设备标识符（OAID/IDFA）</strong> 和 <strong>粗略位置信息（IP 归属地）</strong>，但 <strong>不会关联到任何个人身份信息</strong>。您可以在系统设置中限制广告追踪。</li>
+                <li><strong>腾讯 Bugly</strong>：用于应用稳定性监控。<strong>在您同意本隐私政策后才会启动</strong>，收集崩溃堆栈、设备型号、系统版本、应用版本号，用于定位和修复崩溃问题。<strong>不收集您的任何记录内容</strong>，也不采集通讯录、位置、相册等信息。</li>
                 <li><strong>Flutter 基础库</strong>：包括 Flutter 引擎、Drift 数据库等，仅用于本地功能实现，不收集任何数据。</li>
             </ul>
             <p>未来如果接入 AI 大模型（如知识图谱构建、智能摘要），我们会<strong>提前在 App 内弹窗告知并获得您的明确授权</strong>，并更新本隐私政策。</p>
@@ -234,9 +251,9 @@
             <h2>4. 数据存储与安全</h2>
             <ul>
                 <li><strong>存储位置</strong>：所有数据存储在 <strong>设备本地</strong> 的 SQLite 数据库和文件系统中，不上传任何服务器。</li>
-                <li><strong>数据导出</strong>：您可以通过「设置 → 备份与恢复」功能，将全部数据导出为加密压缩包，自行保管。</li>
+                <li><strong>数据导出</strong>：您可以通过「我的 → 备份与恢复」功能，将全部数据导出为 ZIP 压缩包，自行保管或迁移到新设备。</li>
                 <li><strong>数据删除</strong>：卸载 App 即可删除所有本地数据。您也可以手动在设置中清空数据。</li>
-                <li><strong>加密措施</strong>：备份文件支持 <strong>AES-256 加密</strong>，密码由您设定，我们无法解密。</li>
+                <li><strong>安全提示</strong>：备份文件为<strong>未加密的压缩包</strong>，包含您的全部记录内容。请妥善保管，避免上传至公开网络位置或分享给不可信的第三方。</li>
             </ul>
 
             <h2>5. 您的权利</h2>
@@ -250,17 +267,18 @@
             </ul>
 
             <h2>6. 未成年人保护</h2>
-            <p>伴生记不面向 14 周岁以下未成年人提供服务。如您是未成年人，请在监护人指导下使用。</p>
+            <p>伴生记不面向 14 周岁以下未成年人提供服务。如您是未成年人，请在监护人指导下使用。若监护人发现未成年人未经同意使用本应用，可通过下方邮箱联系我们删除相关数据。</p>
 
             <h2>7. 隐私政策更新</h2>
             <p>我们可能会不时更新本隐私政策。重大变更（如新增数据收集类型）会在 App 内以弹窗形式告知您并获得同意。您可以在「设置 → 隐私政策」中随时查看最新版本。</p>
 
             <h2>8. 联系我们</h2>
-            <p>如您对隐私政策有任何疑问，请联系我们：</p>
+            <p>如您对本隐私政策有任何疑问、意见或投诉，请联系：</p>
             <ul>
+                <li><strong>运营方</strong>：个人开发者 【黄春雷】</li>
                 <li>📧 邮箱：<strong>1244914544@qq.com</strong></li>
             </ul>
-            <p style="margin-top:6px; color:#888;">我们会在 <strong>3 个工作日内</strong> 回复您的邮件。</p>
+            <p style="margin-top:6px; color:#888;">我们会在 <strong>15 个工作日内</strong> 回复您的邮件。</p>
 
             <div class="divider-light"></div>
             <p style="font-size:13px; color:#aaa; text-align:center;">
